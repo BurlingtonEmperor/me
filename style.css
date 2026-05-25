@@ -34,6 +34,7 @@ h1 {
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateZ(-206px); 
 }
 
 .card {
