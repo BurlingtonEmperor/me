@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "C64";
+  src: url("c64.otf");
+}
+
+.c64 {
+  font-family: "C64";
+}
