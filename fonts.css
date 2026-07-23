@@ -3,6 +3,15 @@
   src: url("c64.otf");
 }
 
+@font-face {
+  font-family: "Hornet";
+  src: url("hornet.ttf");
+}
+
 .c64 {
   font-family: "C64";
+}
+
+.hornet {
+  font-family: "Hornet";
 }
