@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Alexander Chang - Portfolio</title>
-    
-    <link rel="stylesheet" href="fonts.css" type="text/css">
-    <link rel="stylesheet" href="style.css" type="text/css">
-  </head>
-  <body>
-    <div class="parent">
-      <div id="border-box">
-        <div class="heading">[*** Alexander Chang's Project Portfolio ***]</div>
-        <hr/>
-        <div id="load-asset">> loading assets...</div>
-        <div class="s-heading">[About Me]</div>
-        <hr/>
-        <div class="s-heading">[Large Projects]</div>
-        <div class="eatcrow2-btn">EatCrow2 -- Autoclave Control System</div>
-        <div class="eatcrow2-btn">StarForge -- Autoclave Scripting Language</div>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Portfolio</title>
+  <link rel="stylesheet" href="me-main/style.css">
+  <link rel="stylesheet" href="me-main/fonts.css">
+</head>
+<body>
 
-    <script src="script.js"></script>
-  </body>
+  <header>
+    <div class="logo">SYS_INIT // PORTFOLIO</div>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        SYSTEM ONLINE // READY FOR DEPLOYMENT
+      </div>
+      <h1>Engineering High-Performance <span>Hardware & Software</span></h1>
+      <p>Undergraduate developer and hardware designer specializing in embedded systems, microcontroller architecture, and custom device fabrication.</p>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">FEATURED_PROJECTS</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sonitrix (Prototype)</h3>
+          <p>A custom embedded hardware device utilizing microcontrollers, onboard sensors, and an OLED diagnostic display interface.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">Hardware</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Systems & Firmware</h3>
+          <p>Low-level code optimizations, memory safety routines, and custom hardware interface communication bridges.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Debugging</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 // BUILT WITH HIGH-TECH PRECISION</p>
+  </footer>
+
+  <script src="me-main/script.js"></script>
+</body>
 </html>
