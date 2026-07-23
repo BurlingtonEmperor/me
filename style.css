@@ -27,14 +27,14 @@ body {
   background-color: black;
   border-radius: 8px;
   color: #a4ea9a;
-  font-family: "Hornet";
   position: absolute;
   padding: 5px;
+  transition: 0.5s background-color ease-in-out;
 }
 
 .eatcrow2-btn:hover {
   cursor: pointer;
-  background-color: #9df15c;
+  background-color: #def3ce;
 }
 
 #border-box {
