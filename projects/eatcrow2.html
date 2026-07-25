@@ -31,7 +31,7 @@
     <section style="margin-bottom: 3rem;">
       <div class="card" style="padding: 0; overflow: hidden; border-color: var(--accent-cyan);">
         <div style="background: var(--surface-border); height: 350px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-family: var(--font-mono);">
-          <img src="/eatcrow/eatcrow_in_action.jpg">
+          <img src="/me/projects/eatcrow/eatcrow_in_action.jpg">
         </div>
       </div>
     </section>
@@ -39,8 +39,15 @@
     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 3rem;">
       <div class="card">
         <h3 style="color: var(--accent-cyan); margin-bottom: 1rem;">Technical Description</h3>
-        <p style="margin-bottom: 1rem;">Detailed breakdown of the architecture, engineering challenges, firmware logic, or custom hardware assembly. Explain how components interface and operate under specific constraints.</p>
-        <p>Include performance metrics, schematic design details, code execution flow, or any relevant testing results.</p>
+        <p style="margin-bottom: 1rem;">EatCrow2 is a sophisticated SCADA-based autoclave control platform that integrates a C++ and Python serial backend with an interactive web dashboard for telemetry and process automation.</p>
+  
+        <h4 style="color: var(--text-main); margin-top: 1rem; margin-bottom: 0.5rem;">Core Architecture & Features</h4>
+        <ul style="color: var(--text-muted); padding-left: 1.2rem; margin-bottom: 1rem;">
+          <li style="margin-bottom: 0.5rem;"><strong>Tri-Mode State Machine:</strong> Operates across Manual, Semi-Manual, and Automatic modes, plus a dedicated "Trainer" mode for safe simulation.</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Macro Engine & Transpiler:</strong> Employs a custom Domain-Specific Language (StarForge) to execute automated curing macros via a transpiler engine.</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Safety & Diagnostics:</strong> Governed by heuristic diagnostic algorithms that monitor real-time sensor rates and state errors to isolate hardware faults.</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Automation Interface:</strong> Built as a standalone desktop application featuring hands-free voice control and automated data logging for precision laboratory cycles.</li>
+        </ul>
       </div>
 
       <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
