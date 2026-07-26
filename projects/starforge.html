@@ -39,14 +39,24 @@
     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 3rem;">
       <div class="card">
         <h3 style="color: var(--accent-cyan); margin-bottom: 1rem;">Technical Description</h3>
-        <p style="margin-bottom: 1rem;">EatCrow2 is a sophisticated SCADA-based autoclave control platform that integrates a C++ and Python serial backend with an interactive web dashboard for telemetry and process automation.</p>
+        <p style="margin-bottom: 1rem;">StarForge operates as a domain-specific language (DSL) and macro transpiler engine (RAS COBOL) that parses COBOL-inspired syntax strings, validates command parameters against a runtime whitelist, and transpiles high-level macro scripts into an asynchronous JavaScript execution pipeline for automated laboratory hardware control[cite: 2].</p>
   
-        <h4 style="color: var(--text-main); margin-top: 1rem; margin-bottom: 0.5rem;">Core Architecture & Features</h4>
+        <h4 style="color: var(--text-main); margin-top: 1rem; margin-bottom: 0.5rem;">Command Set & Keywords Reference</h4>
         <ul style="color: var(--text-muted); padding-left: 1.2rem; margin-bottom: 1rem;">
-          <li style="margin-bottom: 0.5rem;"><strong>Tri-Mode State Machine:</strong> Operates across Manual, Semi-Manual, and Automatic modes, plus a dedicated "Trainer" mode for safe simulation.</li>
-          <li style="margin-bottom: 0.5rem;"><strong>Macro Engine & Transpiler:</strong> Employs a custom Domain-Specific Language (StarForge) to execute automated curing macros via a transpiler engine.</li>
-          <li style="margin-bottom: 0.5rem;"><strong>Safety & Diagnostics:</strong> Governed by heuristic diagnostic algorithms that monitor real-time sensor rates and state errors to isolate hardware faults.</li>
-          <li style="margin-bottom: 0.5rem;"><strong>Automation Interface:</strong> Built as a standalone desktop application featuring hands-free voice control and automated data logging for precision laboratory cycles.</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>CALL</code> / <code>RUN</code>:</strong> Invokes specific routines, such as soft macros, hard macros, or board macros[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>LOG</code> / <code>DISPLAY</code>:</strong> Outputs logging text or messages to the console[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>WAIT</code>:</strong> Pauses execution by setting a specified delay time in milliseconds[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>SET</code>:</strong> Configures hardware operational parameters and safety thresholds, such as temperature (<code>TEMP</code>), pressure (<code>PSI</code>), rates (<code>MAX_TEMP_RATE</code>, <code>MIN_TEMP_RATE</code>, <code>MAX_PSI_RATE</code>, <code>MIN_PSI_RATE</code>), and ceilings (<code>TEMP_MAX</code>, <code>PSI_MAX</code>)[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>VAR</code>:</strong> Declares a new global variable[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>CHANGE_VAR</code>:</strong> Updates the value of an existing global variable[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>RUN_JS</code>:</strong> Executes sandboxed JavaScript code snippets using <code>|js|</code> delimiters[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>INPUT</code> / <code>ACCEPT</code>:</strong> Prompts the user for input via a dialog box[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>INPUT_VAR</code>:</strong> Prompts the user for input and stores the result in a newly declared variable[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>REPEAT</code>:</strong> Sets a flag to loop the macro execution continuously[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>STOP</code>:</strong> Halts macro execution and triggers a hard stop flag[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>IF</code> / <code>ELSE</code>:</strong> Handles conditional control flow using <code>|cond|</code> structures and relational operators like <code>EQUALS</code>, <code>MORE_THAN</code>, <code>LESS_THAN</code>, <code>IS_NOT</code>, and <code>INCLUDES</code>[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>MATH_DIVISION</code> / <code>DIVIDE</code>:</strong> Enables numerical parsing mode for mathematical division operations[cite: 2].</li>
+          <li style="margin-bottom: 0.5rem;"><strong><code>COMMENT</code>:</strong> Denotes script commentary or documentation lines[cite: 2].</li>
         </ul>
       </div>
 
